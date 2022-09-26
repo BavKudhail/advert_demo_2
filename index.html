@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      height: 200vh;
+    }
+    .container {
+      height: 100vh;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content_container {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      max-width: 200px;
+    }
+    .headline {
+      margin: 80px;
+      max-width: 650px;
+    }
+    .cta {
+      max-width: 250px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content_container">
+        <img class="logo" src="./assets/advance_logo_white.svg" />
+        <img class="headline" src="./assets//headline.png" />
+        <img class="cta" src="./assets/cta.png" />
+      </div>
+    </div>
+  </body>
 </html>
