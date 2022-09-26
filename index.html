@@ -55,4 +55,20 @@
       </div>
     </div>
   </body>
+  <script>
+    console.log('hello world');
+    // when user scrolls down
+    function scrollLogger(eventType, payload) {
+      let percentageScrolled;
+      const scrollTop = document.scrollingElement.scrollTop;
+      const scrollHeight = document.body.offsetHeight / 2;
+      percentageScrolled = (scrollTop / scrollHeight) * 100;
+      console.log('percentage scrolled: ', percentageScrolled);
+    }
+    document.addEventListener('scroll', scrollLogger);
+
+    // rotate the background
+
+    // load animation library
+  </script>
 </html>
