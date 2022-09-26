@@ -56,8 +56,6 @@
     </div>
   </body>
   <script>
-    console.log('hello world');
-    // when user scrolls down
     function scrollLogger(eventType, payload) {
       let percentageScrolled;
       const scrollTop = document.scrollingElement.scrollTop;
@@ -67,6 +65,10 @@
     }
     document.addEventListener('scroll', scrollLogger);
 
+    function scrollAnimation(scrollPercent) {
+      const rotationPercent = (scrollPercent - 33) * 3;
+      const rotation = 180 * (rotationPercent / 100);
+    }
     // rotate the background
 
     // load animation library
